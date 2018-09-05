@@ -1,0 +1,38 @@
+a,
+button {
+  border: 0;
+  outline: 0;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+a,
+svg {
+  display: inline-block;
+}
+a {
+  line-height: 1;
+}
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
+.heading {
+  &.bordered {
+    position: relative;
+    margin-bottom: rem-calc(76);
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: rem-calc(-35);
+      left: 0;
+      width: rem-calc(60);
+      height: 8px;
+      background-color: $light-gray;
+    }
+    &.secondary {
+      &:after {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

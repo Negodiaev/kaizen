@@ -76,11 +76,15 @@
 @import 'global/layout';
 
 // custom components
+@import 'components/forms';
 @import 'components/buttons';
+@import 'components/navigation';
+@import 'components/breadcrumbs';
 
 @import 'components/header';
 @import 'components/footer';
 
+@import 'components/hero';
 @import 'components/partners';
 
 // media queries

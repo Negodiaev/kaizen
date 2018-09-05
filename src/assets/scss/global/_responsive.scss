@@ -1,9 +1,40 @@
 @include breakpoint(medium) {
   // Home page
+  .header-content {
+    padding-top: rem-calc(16);
+    padding-bottom: rem-calc(17);
+  }
+  .header-infoblock-text {
+    margin-bottom: rem-calc(15);
+    font-size: rem-calc(30);
+  }
+  .breadcrumbs {
+    margin-bottom: rem-calc(23);
+  }
+  .info-list {
+    max-width: rem-calc(380);
+  }
+  .callback-form {
+    box-shadow: 26px 17px 166px #8489a3;
+  }
 }
 
 @include breakpoint(large) {
   // Home page
+  .navigation-menu {
+    li {
+      flex-basis: rem-calc(200);
+    }
+  }
+  .hero {
+    padding-bottom: rem-calc(45);
+  }
+  .callback-form {
+    padding: rem-calc(44 50 34);
+  }
+  .callback-form-title {
+    margin-bottom: rem-calc(49);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -24,4 +55,26 @@
 
 @include breakpoint(small only) {
   // Home page
+  .header-logo {
+    max-width: rem-calc(103);
+  }
+  .header-infoblock-text {
+    margin-bottom: 0;
+  }
+  .burger-wrapper {
+    line-height: 0;
+  }
+  .breadcrumbs {
+    li {
+      display: none;
+      max-width: rem-calc(140);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:first-child,
+      &:last-child {
+        display: list-item;
+      }
+    }
+  }
 }

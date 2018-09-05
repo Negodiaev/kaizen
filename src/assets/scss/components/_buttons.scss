@@ -1,10 +1,20 @@
 .button {
   box-sizing: border-box;
-  // min-width: rem-calc(189);
+  min-width: rem-calc(200);
   border: 0;
-  // line-height: unitless-calc(20.01, 15);
-  // font-weight: 600;
+  line-height: unitless-calc(25, 16);
+  font-weight: 600;
   white-space: nowrap;
+  &.expanded {
+    width: 100%;
+  }
+  &.secondary {
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
 }
 .burger {
   position: relative;
@@ -19,7 +29,7 @@
     height: 3px;
     border-radius: 2px;
     opacity: 1;
-    background-color: $anchor-color-hover;
+    background-color: $white;
     transition: background-color 0.2s linear;
     &:first-child,
     &:nth-child(3) {
@@ -48,5 +58,20 @@
         transform: translateY(-8px) rotate(-45deg);
       }
     }
+  }
+}
+.video-button {
+  padding: rem-calc(22 37 23 42);
+  &.hollow {
+    border: 7px solid rgba($white, 0.35);
+    color: $white;
+    &:hover,
+    &:focus {
+      border-color: rgba($white, 0.5);
+      color: $white;
+    }
+  }
+  .icon {
+    margin-right: rem-calc(15);
   }
 }

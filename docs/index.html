@@ -14,7 +14,7 @@
 <body>
   <div class="off-canvas-wrapper">
     <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
-      <ul class="vertical menu">
+      <ul class="side-navigation-menu navigation-menu vertical menu">
         <li><a href="#">Открытые тренинги</a></li>
         <li><a href="#">Корпоративные тренинги</a></li>
         <li><a href="#">Магазин</a></li>
@@ -24,43 +24,46 @@
     <div class="off-canvas-content" data-off-canvas-content>
       <div class="sticky-footer">
         <div class="header">
-  <div class="grid-container">
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-2 hide-for-medium">
-        <button type="button" class="burger" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas">
-          <i></i>
-          <i></i>
-          <i></i>
-        </button>
-      </div>
-      <!-- /.cell -->
-      <div class="cell small-8 medium-5">
-        <a href="#" class="header-logo logo"><img src="assets/img/logo.png" alt=""></a>
-      </div>
-      <!-- /.cell -->
-      <div class="infoblock-wrapper cell small-2 medium-7">
-        <div class="infoblock">
-          <div class="infoblock-content">
-            <p class="infoblock-text">
-              <a href="tel:+73422030114" class="header-phone-link phone-link">
-                <svg class="icon hide-for-medium" width="24" height="24">
-                  <use xlink:href="#phone"></use>
-                </svg>
-                <span class="phone-link-text show-for-medium">+7&nbsp;(342)&nbsp;20&nbsp;30&nbsp;114</span>
-              </a>
-            </p>
-            <a href="#" class="infoblock-link show-for-medium">Заказать обратный звонок</a>
+  <div class="header-content">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="burger-wrapper cell small-2 hide-for-medium">
+          <button type="button" class="burger" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas">
+            <i></i>
+            <i></i>
+            <i></i>
+          </button>
+        </div>
+        <!-- /.cell -->
+        <div class="cell small-8 medium-5 text-center medium-text-left">
+          <a href="#" class="header-logo logo"><img src="assets/img/logo.png" alt=""></a>
+        </div>
+        <!-- /.cell -->
+        <div class="infoblock-wrapper cell small-2 medium-7">
+          <div class="infoblock">
+            <div class="infoblock-content">
+              <p class="header-infoblock-text infoblock-text">
+                <a href="tel:+73422030114" class="header-phone-link phone-link">
+                  <svg class="icon hide-for-medium" width="24" height="24">
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  <span class="phone-link-text show-for-medium">+7&nbsp;(342)&nbsp;20&nbsp;30&nbsp;114</span>
+                </a>
+              </p>
+              <a href="#" class="infoblock-link show-for-medium">Заказать обратный звонок</a>
+            </div>
           </div>
         </div>
+        <!-- /.cell -->
       </div>
-      <!-- /.cell -->
+      <!-- /.grid-x -->
     </div>
-    <!-- /.grid-x -->
+    <!-- /.grid-container -->
   </div>
-  <!-- /.grid-container -->
+  <!-- /.header-content -->
   <div class="navigation show-for-medium">
     <div class="grid-container">
-      <ul class="main-menu menu horizontal text-center align-spaced">
+      <ul class="navigation-menu menu horizontal text-center align-spaced">
         <li><a href="#">Открытые тренинги</a></li>
         <li><a href="#">Корпоративные тренинги</a></li>
         <li><a href="#">Магазин</a></li>
@@ -74,7 +77,7 @@
 <!-- /.header --> 
 <main class="main">
   <div class="hero picture-container">
-    <img src="assets/img/bg-hero.jpg" alt="">
+    <img src="assets/img/bg-hero.jpg" class="show-for-medium" alt="">
     <div class="hero-content picture-container-content">
       <div class="grid-container">
         <ul class="breadcrumbs">
@@ -89,9 +92,9 @@
           </li>
         </ul>      <div class="grid-x grid-padding-x">
           <div class="cell medium-7 large-6">
-            <div class="heading bordered secondary">
-              <h1 class="h1">Техника эффективного руководителя</h1>
-              <div class="h5">Технологии управления сотрудниками</div>
+            <div class="hero-heading heading bordered secondary">
+              <h1 class="hero-title h1">Техника эффективного руководителя</h1>
+              <div class="hero-subtitle h5">Технологии управления сотрудниками</div>
             </div>
             <ul class="info-list">
               <li>
@@ -135,17 +138,17 @@
                 Город: Пермь
               </li>
             </ul>
-            <button type="button" class="video-button button hollow">
+            <button type="button" class="hero-video-button video-button button small hollow">
               <svg class="icon" width="28" height="28">
                 <use xlink:href="#play"></use>
               </svg> Видеоприглашение
             </button>
           </div>
           <!-- /.cell -->
-          <div class="cell medium-5 large-4 large-offset-2">
-            <div class="callback-form">
+          <div class="cell medium-5 large-5 large-offset-1 xlarge-4 xlarge-offset-2">
+            <div class="callback-form content-card">
               <form>
-                <div class="h4 text-center">Запись на обучение</div>
+                <div class="callback-form-title h4 text-center">Запись на обучение</div>
                 <label>
                   <input type="text" placeholder="Имя">
                 </label>
@@ -162,8 +165,8 @@
                   <input type="checkbox" name="terms-сheckbox" value="1" id="agree-terms-checkbox" class="checkbox" checked="">
                   <label for="agree-terms-checkbox">Хочу получать полезные статьи</label>
                 </p>
-                <button type="submit" class="button secondary">Записаться</button>
-                <p class="policy help-text">Нажимая кнопку, вы даете согласие <a href="#">на обработку персональных данных</a></p>
+                <button type="submit" class="callback-submit-button button expanded secondary">Записаться</button>
+                <p class="policy help-text">Нажимая кнопку, вы даете согласие <br><a href="#">на обработку персональных данных</a></p>
               </form>
             </div>
             <!-- /.callback-form -->

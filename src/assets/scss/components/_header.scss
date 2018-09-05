@@ -1,0 +1,25 @@
+.header {
+  color: $white;
+  background-color: #212538;
+  a {
+    color: $white;
+  }
+}
+.header-content {
+  padding: 10px 0;
+}
+.infoblock-content,
+.infoblock-text {
+  line-height: 1;
+}
+.infoblock-text {
+  margin-bottom: rem-calc(16);
+  font-weight: 600;
+}
+.infoblock-link {
+  font-size: rem-calc(14);
+  &:hover,
+  &:focus {
+    color: $anchor-color-hover;
+  }
+}
