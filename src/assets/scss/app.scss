@@ -14,36 +14,36 @@
 @include foundation-button;
 @include foundation-forms;
 // @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
-@include foundation-badge;
+// @include foundation-accordion;
+// @include foundation-accordion-menu;
+// @include foundation-badge;
 @include foundation-breadcrumbs;
-@include foundation-button-group;
-@include foundation-callout;
+// @include foundation-button-group;
+// @include foundation-callout;
 @include foundation-card;
 @include foundation-close-button;
 @include foundation-menu;
-@include foundation-menu-icon;
-@include foundation-drilldown-menu;
+// @include foundation-menu-icon;
+// @include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-responsive-embed;
 @include foundation-label;
 @include foundation-media-object;
 @include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
-@include foundation-switch;
+// @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
 @include foundation-thumbnail;
-@include foundation-title-bar;
-@include foundation-tooltip;
-@include foundation-top-bar;
+// @include foundation-title-bar;
+// @include foundation-tooltip;
+// @include foundation-top-bar;
 @include foundation-visibility-classes;
 // @include foundation-float-classes;
 @include foundation-flex-classes;
@@ -54,11 +54,10 @@
 @include motion-ui-animations;
 
 // vendor styles
-@import "vendor/aos";
-@import "vendor/slick-carousel";
+@import 'vendor/aos';
+// @import "vendor/slick-carousel";
 @import 'vendor/swiper';
 @import 'vendor/wa-mediabox';
-@import "vendor/index-menu";
 
 // mixins
 @import 'mixins/container-border';
@@ -71,15 +70,18 @@
 @import 'mixins/zindex';
 
 // global styles
-@import 'global/app-dashboard';
 @import 'global/fonts';
 @import 'global/base';
+@import 'global/typography';
 @import 'global/layout';
 
 // custom components
-@import 'components/navigation/main-nav';
+@import 'components/buttons';
 
+@import 'components/header';
 @import 'components/footer';
+
+@import 'components/partners';
 
 // media queries
 @import 'global/responsive';

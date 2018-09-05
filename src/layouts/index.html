@@ -15,7 +15,7 @@
 <body>
   <div class="off-canvas-wrapper">
     <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
-      Side content
+      {{> side}}
     </div>
     <!-- /.off-canvas -->
     <div class="off-canvas-content" data-off-canvas-content>
@@ -27,9 +27,10 @@
     <!-- /.off-canvas-content -->
   </div>
   <!-- /.off-canvas-wrapper -->
-
+  
   <div class="sprite-container"> {{> sprite}} </div>
-
+  
+  {{> map-init}}
   <script src="{{root}}assets/js/app.js"></script>
 </body>
 

@@ -1,11 +1,3 @@
-@include breakpoint(small only) {
-  // Home page
-}
-
-@include breakpoint(medium down) {
-  // Home page
-}
-
 @include breakpoint(medium) {
   // Home page
 }
@@ -14,7 +6,7 @@
   // Home page
 }
 
-@include breakpoint(1200px) {
+@include breakpoint(xlarge) {
   // Home page
 }
 
@@ -22,10 +14,14 @@
   // Home page
 }
 
-@include breakpoint(xlarge) {
+@include breakpoint(xxlarge) {
   // Home page
 }
 
-@include breakpoint(xxlarge) {
+@include breakpoint(medium down) {
+  // Home page
+}
+
+@include breakpoint(small only) {
   // Home page
 }
