@@ -8,9 +8,9 @@
   & + label {
     position: relative;
     margin: 0;
-    padding-left: rem-calc(33);
-    font-size: rem-calc(14);
-    line-height: unitless-calc(24, 14);
+    padding-left: rem-calc(29);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(25, 15);
     cursor: pointer;
     user-select: none;
     &:before {
@@ -18,14 +18,14 @@
       position: absolute;
       top: 50%;
       left: 0;
-      width: rem-calc(25);
-      height: rem-calc(25);
-      border: 1px solid $light-gray;
+      width: rem-calc(20);
+      height: rem-calc(20);
+      border: 1px solid #c6c6c6;
       text-align: center;
       transform: translateY(-50%);
     }
     &:empty {
-      padding-left: rem-calc(25);
+      padding-left: rem-calc(20);
     }
   }
   &:checked {
@@ -40,25 +40,25 @@
     }
   }
 }
-// .radio {
-//   @extend .checkbox;
-//   & + label {
-//     &:before {
-//       font-size: rem-calc(26);
-//       line-height: unitless-calc(19, 26);
-//       font-weight: $global-weight-bold;
-//       border-radius: 50%;
-//     }
-//   }
-//   &:checked {
-//     & + label {
-//       &:before {
-//         content: '\2022';
-//         background-image: none;
-//       }
-//     }
-//   }
-// }
+.radio {
+  @extend .checkbox;
+  & + label {
+    &:before {
+      font-size: rem-calc(26);
+      line-height: unitless-calc(19, 26);
+      font-weight: $global-weight-bold;
+      border-radius: 50%;
+    }
+  }
+  &:checked {
+    & + label {
+      &:before {
+        content: '\2022';
+        background-image: none;
+      }
+    }
+  }
+}
 .policy {
   margin-top: 0;
   line-height: unitless-calc(19, 13);
@@ -69,6 +69,21 @@
     &:hover,
     &:focus {
       border-color: transparent;
+    }
+  }
+}
+.callback-checkbox {
+  & + label {
+    padding-left: rem-calc(33);
+    font-size: rem-calc(14);
+    line-height: unitless-calc(24, 14);
+    &:before {
+      width: rem-calc(25);
+      height: rem-calc(25);
+      border: 1px solid $light-gray;
+    }
+    &:empty {
+      padding-left: rem-calc(25);
     }
   }
 }

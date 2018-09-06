@@ -1,0 +1,46 @@
+.practice-content {
+  padding: 20px 0;
+  color: $white;
+}
+.practice-heading {
+  &.bordered {
+    margin-bottom: rem-calc(60);
+  }
+}
+.practice-info,
+.practice-title {
+  position: relative;
+}
+.practice-info {
+  margin: rem-calc(15) auto rem-calc(25);
+  padding: rem-calc(0 15);
+  max-width: rem-calc(1020);
+  border: 2px solid #616997;
+  border-top: 0;
+  p {
+    text-align: left;
+    line-height: unitless-calc(31, 15);
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 4%;
+    height: 2px;
+    background-color: #616997;
+  }
+  &:before {
+    left: 0;
+  }
+  &:after {
+    right: 0;
+  }
+}
+.practice-title {
+  top: rem-calc(-15);
+  font-size: rem-calc(30);
+  line-height: unitless-calc(75, 66);
+  font-weight: $global-weight-bold;
+  text-transform: uppercase;
+}

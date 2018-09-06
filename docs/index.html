@@ -138,7 +138,7 @@
                 Город: Пермь
               </li>
             </ul>
-            <button type="button" class="hero-video-button video-button button small hollow">
+            <button type="button" class="hero-video-button video-button button small hollow small-expanded">
               <svg class="icon" width="28" height="28">
                 <use xlink:href="#play"></use>
               </svg> Видеоприглашение
@@ -146,7 +146,7 @@
           </div>
           <!-- /.cell -->
           <div class="cell medium-5 large-5 large-offset-1 xlarge-4 xlarge-offset-2">
-            <div class="callback-form content-card">
+            <div class="header-callback-form callback-form content-card">
               <form>
                 <div class="callback-form-title h4 text-center">Запись на обучение</div>
                 <label>
@@ -162,7 +162,7 @@
                   <input type="text" placeholder="E-mail">
                 </label>
                 <p class="form-row">
-                  <input type="checkbox" name="terms-сheckbox" value="1" id="agree-terms-checkbox" class="checkbox" checked="">
+                  <input type="checkbox" name="terms-сheckbox" value="1" id="agree-terms-checkbox" class="callback-checkbox checkbox" checked="">
                   <label for="agree-terms-checkbox">Хочу получать полезные статьи</label>
                 </p>
                 <button type="submit" class="callback-submit-button button expanded secondary">Записаться</button>
@@ -179,13 +179,13 @@
     </div>
     <!-- /.hero-content -->
   </div>
-  <!-- /.hero -->  <div class="page-menu-wrapper show-for-medium">
+  <!-- /.hero -->  <div class="page-menu-wrapper show-for-large">
     <div class="grid-container">
       <ul class="page-menu menu horizontal">
         <li><a href="#">О компании</a></li>
         <li><a href="#">Наименование подпункта</a></li>
         <li><a href="#">Заголовок</a></li>
-        <li><a href="#">Подробннее о курсе</a></li>
+        <li><a href="#">Подробнее о курсе</a></li>
         <li><a href="#">Узнать больше</a></li>
       </ul>
     </div>
@@ -193,15 +193,15 @@
   </div>
   <!-- /.page-menu-wrapper -->  <div class="learn section">
     <div class="grid-container">
-      <div class="h3">На этом тренинге вы научитесь</div>
+      <div class="learn-title h3">На этом тренинге вы научитесь</div>
       <ul class="custom-list grid-x grid-padding-x">
-        <li class="cell medium-6">Описывать ситуацию, формулировать проблему и предлагать качественное решение</li>
-        <li class="cell medium-6">Описывать ситуацию, формулировать проблему и предлагать качественное решение</li>
-        <li class="cell medium-6">Как уйти от постоянного «тушения пожаров» </li>
-        <li class="cell medium-6">Как уйти от постоянного «тушения пожаров» </li>
-        <li class="cell medium-6">Как поставить задачу и получить запланированный результат </li>
-        <li class="cell medium-6">Как поставить задачу и получить запланированный результат</li>
-        <li class="cell medium-6">Как выстраивать конструктивные взаимоотношения с сотрудниками</li>
+        <li class="cell medium-5">Описывать ситуацию, формулировать проблему и предлагать качественное решение</li>
+        <li class="cell medium-5 medium-offset-1">Описывать ситуацию, формулировать проблему и предлагать качественное решение</li>
+        <li class="cell medium-5">Как уйти от постоянного «тушения пожаров» </li>
+        <li class="cell medium-5 medium-offset-1">Как уйти от постоянного «тушения пожаров» </li>
+        <li class="cell medium-5">Как поставить задачу и получить запланированный результат </li>
+        <li class="cell medium-5 medium-offset-1">Как поставить задачу и получить запланированный результат</li>
+        <li class="cell medium-5">Как выстраивать конструктивные взаимоотношения с сотрудниками</li>
       </ul>
       <!-- /.grid-x -->
     </div>
@@ -209,18 +209,21 @@
   </div>
   <!-- /.learn -->  <div class="about section light">
     <div class="grid-container">
-      <div class="heading bordered seondary h3">О чем тренинг</div>
-      <div class="grid-x grid-padding-x">
-        <div class="cell medium-6">
-          <p>В основе программы лежит разработанный компанией «Тойота» подход к организации производственной системы TPM (Total
+      <div class="grid-x grid-padding-x align-bottom">
+        <div class="cell medium-11 large-5">
+          <div class="heading bordered secondary h3">О чем тренинг</div>
+          <p>В основе программы лежит разработанный компанией «Тойота» подход к организации производственной системы TPM
+            (Total
             Productive Maintenance), более известный под названием Lean Production (Бережливое производство).</p>
-          <p>Система «Бережливое производство» позволяет максимально подстроить производство под потребности заказчиков путём минимизации
+          <p>Система «Бережливое производство» позволяет максимально подстроить производство под потребности заказчиков
+            путём минимизации
             потерь.</p>
-          <p>Переход к бережливому производству во многих случаях не требует серьезных вложений и приносит экономический эффект
+          <p>Переход к бережливому производству во многих случаях не требует серьезных вложений и приносит экономический
+            эффект
             даже при внедрении одного-двух инструментов.</p>
         </div>
         <!-- /.cell -->
-        <div class="cell medium-6">
+        <div class="cell large-6 large-offset-1 text-center large-text-left">
           <img src="assets/img/chart.jpg" alt="">
         </div>
         <!-- /.cell -->
@@ -231,16 +234,21 @@
   </div>
   <!-- /.about -->  <div class="whom section">
     <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="cell medium-6 medium-order-2">
-          <div class="heading bordered secondary h3">Для кого</div>
-          <p>Руководителям высшего и среднего звена производственных и услуговых предприятий. Особенно руководителям и специалистам
-            служб главного инженера, главного механика, главного технолога, качества. Предварительной теоретической подготовки
-            в области бережливого производства не требуется.</p>
-          <p>Опыт работы в проектах, опыт управленческой и командной работы будет полезен.</p>
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell medium-7 medium-order-2 large-5">
+          <div class="whom-content">
+            <div class="heading bordered secondary h3">Для кого</div>
+            <p>Руководителям высшего и среднего звена производственных и услуговых предприятий. Особенно руководителям и
+              специалистам
+              служб главного инженера, главного механика, главного технолога, качества. Предварительной теоретической
+              подготовки
+              в области бережливого производства не требуется.</p>
+            <p>Опыт работы в проектах, опыт управленческой и командной работы будет полезен.</p>
+          </div>
+          <!-- /.whom-content -->
         </div>
         <!-- /.cell -->
-        <div class="cell medium-6 medium-order-1">
+        <div class="cell medium-5 medium-order-1 large-6 text-center">
           <img src="assets/img/presentation.png" alt="">
         </div>
         <!-- /.cell -->
@@ -252,7 +260,7 @@
   <!-- /.whom -->  <div class="program section light">
     <div class="grid-container">
       <div class="heading bordered secondary h3">Программа тренинга</div>
-      <table>
+      <table class="program-table stack">
         <tbody>
           <tr>
             <td>09:00-10:00</td>
@@ -269,14 +277,21 @@
           <tr>
             <td>12:00-14:00</td>
             <td>
-              <p>Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная
-                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
-                на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления
+              <p>Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и
+                репрезентативная
+                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                нацеленность
+                на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы
+                представления
                 знаний о внешней тексту действительности.</p>
-              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи. Восприятие текста
-                изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст следующим
-                образом: «это письменное сообщение, объективированное в виде письменного документа, состоящее из ряда высказываний,
+              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи. Восприятие
+                текста
+                изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст
+                следующим
+                образом: «это письменное сообщение, объективированное в виде письменного документа, состоящее из ряда
+                высказываний,
                 объединённых разными типами лексической, грамматической и логической связи, имеющее</p>
+              <br class="show-for-medium">
             </td>
           </tr>
           <tr>
@@ -294,51 +309,66 @@
           <tr>
             <td>
               <div class="preview-picture thumbnail">
-                <img src="assets/img/program/1.jpg" alt="">
+                <a href="assets/img/program/1.jpg" class="thumbnail-link" data-mediabox="program-thumbnails">
+                  <img src="assets/img/program/1.jpg" alt="">
+                </a>
               </div>
             </td>
             <td>
               <div class="program-date">25 Сентября</div>
-              <p>Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная
-                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
-                на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления
+              <p>Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и
+                репрезентативная
+                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности,
+                нацеленность
+                на выявление его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы
+                представления
                 знаний о внешней тексту действительности.</p>
             </td>
           </tr>
           <tr>
             <td>
               <div class="preview-picture thumbnail">
-                <img src="assets/img/program/2.jpg" alt="">
+                <a href="assets/img/program/2.jpg" class="thumbnail-link" data-mediabox="program-thumbnails">
+                  <img src="assets/img/program/2.jpg" alt="">
+                </a>
               </div>
             </td>
             <td>
               <div class="program-date">26 Сентября</div>
-              <p>Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и репрезентативная
+              <p>Существуют две основные трактовки понятия «текст»: имманентная (расширенная, философски нагруженная) и
+                репрезентативная
                 (более частная).</p>
             </td>
           </tr>
         </tbody>
       </table>
       <div class="text-center">
-        <button type="button" class="button secondary">Получить программу на email</button>
+        <button type="button" class="button long secondary small-expanded">Получить программу на email</button>
       </div>
     </div>
     <!-- /.grid-container -->
   </div>
   <!-- /.program -->  <div class="trainer section">
     <div class="grid-container">
-      <div class="grid-x grid-padding-x">
+      <div class="trainer-content grid-x grid-padding-x">
         <div class="cell medium-7">
-          <div class="heading bordered secondary">
-            <div class="h3">Радислав Гандапас</div>
-            <div class="trainer-role">Тренер</div>
+          <div class="trainer-info">
+            <div class="heading bordered">
+              <div class="trainer-title h3">Радислав Гандапас</div>
+              <div class="trainer-subtitle">Тренер</div>
+            </div>
+            <p>Самый известный в России специалист по лидерству. Автор 9 книги 14 фильмовпо лидерству и ораторскому
+              искусству.
+              Самый титулованный бизнес-тренер России, единственный в стране трижды был признан лучшим в профессии по
+              результатам
+              года. Лауреат Книжной премии Рунета 2013.</p>
+            <p>Радислав Гандапас — самый известный в России специалист по лидерству. Автор 9 книги 14 фильмовпо лидерству
+              и ораторскому
+              искусству. Самый титулованный бизнес-тренер России, единственный в стране трижды был признан лучшим в
+              профессии
+              по результатам года. Лауреат Книжной премии Рунета 2013.</p>
           </div>
-          <p>Самый известный в России специалист по лидерству. Автор 9 книги 14 фильмовпо лидерству и ораторскому искусству.
-            Самый титулованный бизнес-тренер России, единственный в стране трижды был признан лучшим в профессии по результатам
-            года. Лауреат Книжной премии Рунета 2013.</p>
-          <p>Радислав Гандапас — самый известный в России специалист по лидерству. Автор 9 книги 14 фильмовпо лидерству и ораторскому
-            искусству. Самый титулованный бизнес-тренер России, единственный в стране трижды был признан лучшим в профессии
-            по результатам года. Лауреат Книжной премии Рунета 2013.</p>
+          <!-- /.trainer-info -->
         </div>
         <!-- /.cell -->
         <div class="cell medium-5">
@@ -351,21 +381,18 @@
     <!-- /.grid-container -->
   </div>
   <!-- /.trainer -->  <div class="practice picture-container text-center">
+    <img src="assets/img/bg-practice.jpg" alt="">
     <div class="practice-content picture-container-content">
-      <img src="assets/img/bg-practice.jpg" alt="">
       <div class="grid-container">
-        <div class="grid-x grid-padding-x">
-          <div class="cell medium-10 medium-offset-1">
-            <p class="lead heading bordered secondary">Знаете, что самое крутое <br>в этом тренинге?</p>
-            <div class="practice-info">
-              <div class="practice-title">Это практика!</div>
-              <p>У вас будет рабочая тетрадка, в которой вы будете планировать то дело, которое у вас не получается сделать долгое время. Самостоятельно, вместе с Максимом и в малых группах вы будете прорабатывать каждый блок программы.</p>
-            </div>
-            <button type="button" class="button secondary">Зарегистрироваться</button>
-          </div>
-          <!-- /.cell -->
+        <p class="practice-heading lead heading bordered centered secondary">Знаете, что самое крутое <br>в этом тренинге?</p>
+        <div class="practice-info">
+          <div class="practice-title">Это практика!</div>
+          <p>У вас будет рабочая тетрадка, в которой вы будете планировать то дело, которое у вас не получается сделать
+            долгое время. Самостоятельно, вместе с Максимом и в малых группах вы будете прорабатывать каждый блок
+            программы.</p>
         </div>
-        <!-- /.grid-x -->
+        <button type="button" class="button long secondary small-expanded">Зарегистрироваться</button>
+        <!-- /.cell -->
       </div>
       <!-- /.grid-container -->
     </div>
@@ -373,20 +400,28 @@
   </div>
   <!-- /.practice -->  <div class="mail section">
     <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="cell medium-6">
-          <div class="mail-heading">
-            <div class="h2">Мы собрали все статьи в одно письмо</div>
-            Много  полезной информации
+      <div class="grid-x grid-padding-x align-bottom">
+        <div class="cell medium-5 medium-order-2 large-4 xlarge-3 text-center medium-text-left">
+          <div class="mail-picture">
+            <img src="assets/img/letter.png" alt="">
           </div>
-          <form>
-            <label><input type="text" placeholder="Введите e-mail"></label>
-            <button type="submit" class="button secondary">Пришлите мне</button>
-          </form>
         </div>
         <!-- /.cell -->
-        <div class="cell medium-6">
-          <img src="assets/img/letter.png" alt="">
+        <div class="cell medium-7 medium-order-1 large-6 large-offset-1 xlarge-5 xlarge-offset-2">
+          <div class="mail-content">
+            <div class="mail-heading">
+              <div class="mail-title h2">Мы собрали все статьи в одно письмо</div>
+              <div class="mail-subtitle">Много полезной информации</div>
+            </div>
+            <div class="mail-form">
+              <form>
+                <label><input type="text" placeholder="Введите e-mail"></label>
+                <button type="submit" class="mail-submit-button button long secondary small-expanded">Пришлите мне</button>
+              </form>
+            </div>
+            <!-- /.mail-form -->
+          </div>
+          <!-- /.mail-content -->
         </div>
         <!-- /.cell -->
       </div>
@@ -396,7 +431,7 @@
   </div>
   <!-- /.mail -->  <div class="text section light">
     <div class="grid-container">
-      <table class="stack">
+      <table class="custom-table stack">
         <thead>
           <tr>
             <th>Наименование товара или услуги</th>
@@ -407,7 +442,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Наименвоание позиции</td>
+            <td>Наименование позиции</td>
             <td>33</td>
             <td>67 500 руб.</td>
             <td>
@@ -441,9 +476,9 @@
           </tr>
         </tbody>
       </table>
-      <div class="h3">Текстовый блок</div>
+      <div class="text-title h3">Текстовый блок</div>
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-6">
+        <div class="cell large-6">
           <p>Самый известный в России специалист по лидерству. Автор 9 книги 14 фильмовпо лидерству и ораторскому искусству.
             Самый титулованный бизнес-тренер России, единственный в стране трижды был признан лучшим в профессии по результатам
             года. Лауреат Книжной премии Рунета 2013.</p>
@@ -452,7 +487,7 @@
             по результатам года. Лауреат Книжной премии Рунета 2013.</p>
         </div>
         <!-- /.cell -->
-        <div class="cell medium-6">
+        <div class="cell large-6">
           <p>Самый известный в России специалист по лидерству. Автор 9 книги 14 фильмовпо лидерству и ораторскому искусству.
             Самый титулованный бизнес-тренер России, единственный в стране трижды был признан лучшим в профессии по результатам
             года. Лауреат Книжной премии Рунета 2013. Радислав Гандапас — самый известный в России специалист по лидерству.
@@ -471,14 +506,14 @@
       <div class="h2">Отзывы</div>
       <div id="feedback-slider" class="feedback-slider swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
+          <div class="feedback-slide swiper-slide">
             <div class="feedback-item card">
               <div class="feedback-item-picture card-section">
                 <img src="assets/img/feedback/1.jpg" alt="">
               </div>
               <!-- /.feedback-item-picture -->
               <div class="feedback-item-content card-section">
-                <div class="feedback-item-author text-center">
+                <div class="feedback-item-author">
                   <div class="feedback-item-title">Иван Сергеев</div>
                   <div class="feedback-item-subtitle">IT директор</div>
                 </div>
@@ -495,14 +530,14 @@
             <!-- /.feedback-item -->
           </div>
           <!-- /.swiper-slide -->
-          <div class="swiper-slide">
+          <div class="feedback-slide swiper-slide">
             <div class="feedback-item card">
               <div class="feedback-item-picture card-section">
                 <img src="assets/img/feedback/2.jpg" alt="">
               </div>
               <!-- /.feedback-item-picture -->
               <div class="feedback-item-content card-section">
-                <div class="feedback-item-author text-center">
+                <div class="feedback-item-author">
                   <div class="feedback-item-title">Константин Константинопольский</div>
                   <div class="feedback-item-subtitle">Менеджер</div>
                 </div>
@@ -518,18 +553,18 @@
             <!-- /.feedback-item -->
           </div>
           <!-- /.swiper-slide -->
-          <div class="swiper-slide">
+          <div class="feedback-slide swiper-slide">
             <div class="feedback-item card">
               <div class="feedback-item-picture card-section">
                 <img src="assets/img/feedback/3.jpg" alt="">
               </div>
               <!-- /.feedback-item-picture -->
               <div class="feedback-item-content card-section">
-                <div class="feedback-item-author text-center">
+                <div class="feedback-item-author">
                   <div class="feedback-item-title">Мария Лонинова</div>
                   <div class="feedback-item-subtitle">Инженер</div>
                 </div>
-                <div class="responsive-embed">
+                <div class="responsive-embed widescreen">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/GkQhConeJ9c" allow="encrypted-media"
                     allowfullscreen></iframe>
                 </div>

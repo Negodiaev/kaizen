@@ -1,0 +1,29 @@
+.program-table {
+  th,
+  td {
+    vertical-align: top;
+    line-height: unitless-calc(23, 15);
+  }
+  td {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+    &:first-child {
+      color: $dark-gray;
+    }
+  }
+  p {
+    line-height: unitless-calc(23, 15);
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.program-date {
+  margin-bottom: rem-calc(10);
+  color: $dark-gray;
+}
+.preview-picture {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,5 +1,17 @@
 @include breakpoint(medium) {
   // Home page
+  p {
+    margin-bottom: rem-calc(24);
+  }
+  .lead {
+    font-size: rem-calc(25);
+  }
+  .card-section {
+    padding: rem-calc(25);
+    & + .card-section {
+      padding-top: rem-calc(15);
+    }
+  }
   .header-content {
     padding-top: rem-calc(16);
     padding-bottom: rem-calc(17);
@@ -8,14 +20,155 @@
     margin-bottom: rem-calc(15);
     font-size: rem-calc(30);
   }
+  .hero {
+    padding-bottom: rem-calc(45);
+  }
   .breadcrumbs {
     margin-bottom: rem-calc(23);
+  }
+  .heading {
+    &.bordered {
+      margin-bottom: rem-calc(76);
+      &:after {
+        bottom: rem-calc(-35);
+      }
+    }
   }
   .info-list {
     max-width: rem-calc(380);
   }
   .callback-form {
     box-shadow: 26px 17px 166px #8489a3;
+  }
+  .header-callback-form {
+    margin-top: 1rem;
+  }
+  .learn {
+    padding-top: rem-calc(42);
+    padding-bottom: rem-calc(72);
+  }
+  .about {
+    padding-bottom: rem-calc(62);
+  }
+  .whom {
+    padding-top: rem-calc(137);
+    padding-bottom: rem-calc(84);
+  }
+  .whom-content {
+    padding-left: rem-calc(45);
+    padding-right: rem-calc(15);
+  }
+  .program {
+    padding-bottom: rem-calc(55);
+  }
+  .program-table {
+    margin-bottom: rem-calc(41);
+    tr {
+      &:first-child {
+        td {
+          padding-top: rem-calc(29);
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: rem-calc(60);
+        }
+      }
+    }
+    th,
+    td {
+      &:first-child {
+        padding-left: rem-calc(20);
+        min-width: rem-calc(190);
+      }
+      &:last-child {
+        padding-right: rem-calc(20);
+      }
+    }
+    p {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .trainer-content {
+    align-items: flex-end;
+  }
+  .trainer-title {
+    margin-bottom: rem-calc(10);
+  }
+  .practice-content {
+    padding-top: rem-calc(71);
+    padding-bottom: rem-calc(39);
+  }
+  .practice-heading {
+    &.bordered {
+      margin-bottom: rem-calc(125);
+      &:after {
+        bottom: rem-calc(-41);
+      }
+    }
+  }
+  .practice-info {
+    margin-bottom: rem-calc(50);
+    padding: rem-calc(0 104 22);
+    &:before,
+    &:after {
+      width: 15%;
+    }
+  }
+  .practice-title {
+    top: rem-calc(-27);
+    font-size: rem-calc(48);
+  }
+  .mail {
+    padding-top: rem-calc(130);
+    padding-bottom: rem-calc(130);
+  }
+  .mail-heading {
+    margin-bottom: rem-calc(46);
+  }
+  .mail-title {
+    margin-bottom: rem-calc(6);
+    line-height: unitless-calc(48, 34);
+  }
+  .mail-form {
+    max-width: rem-calc(300);
+    input {
+      margin-bottom: rem-calc(39);
+    }
+  }
+  .text {
+    padding-top: rem-calc(68);
+    padding-bottom: rem-calc(36);
+    p {
+      padding-right: rem-calc(55);
+    }
+  }
+  .custom-table {
+    margin-bottom: rem-calc(56);
+    th,
+    td {
+      &:last-child {
+        label {
+          float: right;
+        }
+      }
+    }
+  }
+  .text-title {
+    margin-bottom: rem-calc(4);
+  }
+  .feedback {
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(69);
+  }
+  .feedback-item-picture {
+    padding-top: rem-calc(62);
+  }
+  .feedback-item-content {
+    padding-bottom: rem-calc(10);
+  }
+  .feedback-item-author {
+    margin-bottom: rem-calc(36);
   }
 }
 
@@ -26,19 +179,82 @@
       flex-basis: rem-calc(200);
     }
   }
-  .hero {
-    padding-bottom: rem-calc(45);
-  }
   .callback-form {
     padding: rem-calc(44 50 34);
   }
   .callback-form-title {
     margin-bottom: rem-calc(49);
   }
+  .about {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .program-table {
+    th,
+    td {
+      &:first-child {
+        padding-left: rem-calc(40);
+      }
+      &:last-child {
+        padding-right: rem-calc(80);
+      }
+    }
+  }
+  .trainer {
+    padding-top: rem-calc(96);
+  }
+  .trainer-content {
+    align-items: center;
+  }
+  .trainer-info {
+    padding-right: rem-calc(40);
+  }
+  .practice-info {
+    &:before,
+    &:after {
+      width: 20%;
+    }
+  }
+  .practice-title {
+    top: rem-calc(-40);
+    font-size: rem-calc(66);
+  }
+  .custom-table {
+    th,
+    td {
+      &:first-child {
+        padding-left: rem-calc(33);
+        width: 58%;
+      }
+      &:last-child {
+        padding-right: rem-calc(30);
+      }
+    }
+  }
 }
 
 @include breakpoint(xlarge) {
   // Home page
+  .page-menu {
+    li {
+      & + li {
+        margin-left: rem-calc(75);
+      }
+    }
+  }
+  .practice-info {
+    &:before,
+    &:after {
+      width: rem-calc(215);
+    }
+  }
+  .mail-content {
+    margin-left: rem-calc(-20);
+    padding-right: rem-calc(50);
+  }
 }
 
 @include breakpoint(1280px) {
@@ -55,6 +271,11 @@
 
 @include breakpoint(small only) {
   // Home page
+  .button {
+    &.small-expanded {
+      width: 100%;
+    }
+  }
   .header-logo {
     max-width: rem-calc(103);
   }
@@ -74,6 +295,34 @@
       &:first-child,
       &:last-child {
         display: list-item;
+      }
+    }
+  }
+  .program-table {
+    td {
+      & + td {
+        padding-top: 0;
+      }
+    }
+  }
+  .trainer-subtitle {
+    font-size: rem-calc(14);
+  }
+  .mail-picture {
+    margin-bottom: rem-calc(30);
+  }
+  .custom-table {
+    th,
+    td {
+      padding-top: rem-calc(12);
+      padding-bottom: rem-calc(5);
+      &:last-child {
+        padding-top: rem-calc(20);
+        padding-bottom: rem-calc(30);
+      }
+      &:empty {
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
   }

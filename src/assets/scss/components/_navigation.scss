@@ -48,3 +48,25 @@
     }
   }
 }
+.page-menu-wrapper {
+  position: relative;
+  box-shadow: 3px 1px 49px rgba(127, 130, 145, 0.44);
+}
+.page-menu {
+  li {
+    & + li {
+      margin-left: rem-calc(50);
+    }
+  }
+  a {
+    padding-top: rem-calc(31);
+    padding-bottom: rem-calc(30);
+    border-bottom: 4px solid transparent;
+    font-weight: 600;
+    color: #1e263e;
+    &:hover,
+    &:focus {
+      border-color: $secondary-color;
+    }
+  }
+}

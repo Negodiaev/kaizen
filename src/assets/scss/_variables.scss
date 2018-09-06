@@ -133,7 +133,7 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
+$header-margin-bottom: 1rem;
 $header-styles: (
   small: (
     'h1': (
@@ -160,10 +160,14 @@ $header-styles: (
       'font-size': 36
     ),
     'h2': (
-      'font-size': 34
+      'mb': rem-calc(56),
+      'font-size': 34,
+      'lh': unitless-calc(56, 34)
     ),
     'h3': (
-      'font-size': 30
+      'mb': rem-calc(52),
+      'font-size': 30,
+      'lh': unitless-calc(53, 30)
     ),
     'h4': (
       'font-size': 20
@@ -218,8 +222,8 @@ $keystroke-radius: $global-radius;
 $abbr-underline: 1px dotted $black;
 // 5. Typography Helpers
 // ---------------------
-$lead-font-size: $global-font-size * 1.25;
-$lead-lineheight: 1.6;
+$lead-font-size: rem-calc(18);
+$lead-lineheight: unitless-calc(46, 25);
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
@@ -329,11 +333,11 @@ $callout-link-tint: 30%;
 $card-background: $white;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-border: 1px solid $super-light-gray;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
-$card-margin-bottom: $global-margin;
+$card-margin-bottom: rem-calc(10);
 // 15. Close Button
 // ----------------
 $closebutton-position: right top;
@@ -621,7 +625,7 @@ $prototype-utilities-breakpoints: $global-prototype-breakpoints;
 $prototype-text-overflow: ellipsis;
 // 46. Responsive Embed
 // --------------------
-$responsive-embed-margin-bottom: rem-calc(16);
+$responsive-embed-margin-bottom: rem-calc(12);
 $responsive-embed-ratios: (
   default: 4 by 3,
   widescreen: 16 by 9
@@ -666,22 +670,22 @@ $switch-paddle-transition: all 0.25s ease-out;
 // ---------
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-border: 1px solid $super-light-gray;
+$table-padding: rem-calc(21 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-is-striped: true;
+$table-is-striped: false;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: $table-background;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
-$show-header-for-stacked: false;
-$table-stack-breakpoint: medium;
+$show-header-for-stacked: true;
+$table-stack-breakpoint: small;
 // 51. Tabs
 // --------
 $tab-margin: 0;
@@ -701,8 +705,8 @@ $tab-content-padding: 1rem;
 // -------------
 $thumbnail-border: solid 4px $white;
 $thumbnail-margin-bottom: $global-margin;
-$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
-$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-shadow: 0 0 4px rgba(140, 117, 102, 0.44);
+$thumbnail-shadow-hover: $thumbnail-shadow;
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
 // 53. Title Bar

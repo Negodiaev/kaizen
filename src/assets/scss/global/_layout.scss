@@ -22,8 +22,15 @@
 .picture-container-content {
   z-index: 2;
 }
+.section,
 .content-card {
   background-color: $white;
+}
+.section {
+  padding: 20px 0;
+  &.light {
+    background-color: #f9f9f9;
+  }
 }
 
 .map {

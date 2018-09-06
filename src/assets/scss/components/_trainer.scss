@@ -1,0 +1,13 @@
+.trainer {
+  padding-bottom: 0;
+}
+.trainer-title {
+  margin-bottom: rem-calc(5);
+}
+.trainer-subtitle {
+  line-height: unitless-calc(23, 15);
+  font-weight: $global-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: $secondary-color;
+}

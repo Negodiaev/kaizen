@@ -1,0 +1,20 @@
+.mail-heading {
+  margin-bottom: rem-calc(20);
+}
+.mail-title {
+  margin-bottom: rem-calc(6);
+  text-transform: uppercase;
+}
+.mail-subtitle {
+  line-height: unitless-calc(31, 15);
+}
+.mail-form {
+  input {
+    height: rem-calc(55);
+  }
+}
+.mail-submit-button {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

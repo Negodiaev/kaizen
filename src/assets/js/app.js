@@ -98,7 +98,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
-    autoHeight: true,
     lazy: {
       loadPrevNext: true
     },
@@ -107,11 +106,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
       // crossFade: true
     },
     breakpoints: {
-      1024: {
+      1023: {
         slidesPerView: 2
       },
-      640: {
-        slidesPerView: 1
+      639: {
+        slidesPerView: 1,
+        autoHeight: true
       }
     }
   });
@@ -142,4 +142,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
       }
     }
   });
+
+  // lightbox
+  //Translate - set before any binding
+  WAMediaBox.lang = {
+    prev: 'Назад',
+    next: 'Вперёд',
+    close: 'Закрыть',
+    openInNew: 'Открыть в новом окне'
+  };
 });

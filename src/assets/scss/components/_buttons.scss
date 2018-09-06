@@ -1,19 +1,21 @@
 .button {
   box-sizing: border-box;
-  min-width: rem-calc(200);
+  width: rem-calc(280);
+  max-width: 100%;
   border: 0;
   line-height: unitless-calc(25, 16);
   font-weight: 600;
   white-space: nowrap;
-  &.expanded {
-    width: 100%;
-  }
+  user-select: none;
   &.secondary {
     color: $white;
     &:hover,
     &:focus {
       color: $white;
     }
+  }
+  &.long {
+    width: rem-calc(300);
   }
 }
 .burger {
