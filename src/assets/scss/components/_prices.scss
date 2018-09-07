@@ -1,0 +1,64 @@
+.prices-item {
+  border: 0;
+  box-shadow: 0 0 8px rgba($black, 0.13);
+}
+.prices-item-heading {
+  padding: rem-calc(14 0);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  &.bordered {
+    margin-bottom: rem-calc(30);
+    &:after {
+      bottom: rem-calc(-10);
+      width: rem-calc(38);
+      height: 10px;
+      background-color: $medium-gray;
+    }
+  }
+}
+.prices-item-description {
+  margin-bottom: rem-calc(25);
+  line-height: unitless-calc(24, 15);
+  font-weight: 600;
+}
+.prices-item-costs {
+  padding-top: 0;
+}
+.costs-table {
+  margin-bottom: rem-calc(25);
+  tbody {
+    border: 0;
+    tr {
+      &:last-child {
+        border: 0;
+      }
+    }
+  }
+  td {
+    font-size: rem-calc(13);
+    line-height: unitless-calc(20, 13);
+    &:first-child {
+      padding-left: 0;
+      width: 50%;
+      color: #666;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.cost {
+  line-height: 1;
+  letter-spacing: 0.025em;
+  &.total {
+    margin-bottom: rem-calc(6);
+    font-size: rem-calc(20);
+  }
+  &.previous {
+    font-size: rem-calc(17);
+    text-decoration: line-through;
+  }
+  &.sum {
+    font-weight: $global-weight-bold;
+  }
+}

@@ -1,0 +1,26 @@
+.map {
+  width: 100%;
+  height: rem-calc(300);
+}
+.map-details {
+  margin-bottom: 0;
+  border: 0;
+  background-color: rgba($white, 0.91);
+  box-shadow: 0 0 8px rgba($black, 0.13);
+  p {
+    font-size: rem-calc(13);
+    line-height: unitless-calc(24, 13);
+    color: #414141;
+    &:last-child {
+      margin-bottom: rem-calc(8);
+    }
+  }
+}
+.map-details-title {
+  margin-bottom: 0;
+  line-height: unitless-calc(44, 34);
+}
+.map-details-subtitle {
+  line-height: unitless-calc(24, 15);
+  font-weight: 600;
+}

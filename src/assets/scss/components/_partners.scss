@@ -1,6 +1,39 @@
 .partners-slider-wrapper {
   position: relative;
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(30);
+  border-top: 1px solid #cdcdcd;
+}
+.partners-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: rem-calc(100);
+  text-align: center;
+  background-color: $white;
+}
+.partners-slider-navigation {
 }
 .partners-slider-control {
+  position: absolute;
+  top: 0;
+  margin: rem-calc(-50 0 0);
+  left: auto;
+  width: auto;
+  height: auto;
+  outline-color: transparent;
+  color: #a0a0a0;
   background-image: none;
+  transition: color 0.2s ease-in-out;
+  &:hover,
+  &:focus {
+    color: #616379;
+  }
+  &.prev {
+    right: rem-calc(50);
+  }
+  &.next {
+    right: 0;
+  }
 }

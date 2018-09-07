@@ -3,13 +3,26 @@
   p {
     margin-bottom: rem-calc(24);
   }
+  hr {
+    margin-top: rem-calc(30);
+    margin-bottom: rem-calc(30);
+  }
   .lead {
     font-size: rem-calc(25);
+  }
+  .card {
+    margin-bottom: rem-calc(20);
+    &.map-details {
+      margin-bottom: 0;
+    }
   }
   .card-section {
     padding: rem-calc(25);
     & + .card-section {
       padding-top: rem-calc(15);
+    }
+    &.prices-item-costs {
+      padding-top: 0;
     }
   }
   .header-content {
@@ -161,6 +174,9 @@
     padding-top: rem-calc(50);
     padding-bottom: rem-calc(69);
   }
+  .feedback-item {
+    margin-bottom: 0;
+  }
   .feedback-item-picture {
     padding-top: rem-calc(62);
   }
@@ -170,10 +186,109 @@
   .feedback-item-author {
     margin-bottom: rem-calc(36);
   }
+  .prices {
+    padding-top: rem-calc(52);
+    padding-bottom: rem-calc(50);
+  }
+  .prices-item-cell {
+    margin-bottom: rem-calc(20);
+  }
+  .prices-item {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .prices-item-info {
+    margin-bottom: rem-calc(10);
+  }
+  .prices-item-heading {
+    &.bordered {
+      margin-bottom: rem-calc(65);
+      &:after {
+        bottom: rem-calc(-24);
+      }
+    }
+  }
+  .prices-item-description {
+    margin-bottom: rem-calc(56);
+  }
+  .prices-item-costs {
+    flex-grow: 0;
+  }
+  .costs-table {
+    td {
+      padding-top: rem-calc(27);
+      padding-bottom: rem-calc(27);
+    }
+  }
+  .map-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  .map {
+    height: rem-calc(500);
+  }
+  .map-info {
+    position: absolute;
+    bottom: rem-calc(80);
+    left: 0;
+    padding: 0;
+    max-width: rem-calc(400);
+    background-color: transparent;
+  }
+  .map-details {
+    padding: rem-calc(15 15 0);
+    box-shadow: 0 0 51px rgba(75, 91, 124, 0.22);
+    p {
+      padding-right: rem-calc(35);
+    }
+  }
+  .map-heading {
+    &.bordered {
+      &:after {
+        bottom: rem-calc(-42);
+      }
+    }
+  }
+  .partners {
+    padding-top: rem-calc(53);
+    padding-bottom: rem-calc(118);
+  }
+  .partners-title {
+    margin-bottom: rem-calc(22);
+  }
+  .partners-slider-wrapper {
+    padding-top: rem-calc(46);
+    padding-bottom: rem-calc(41);
+  }
+  .partners-slider-control {
+    margin-top: rem-calc(-59);
+  }
+  .footer {
+    background-image: linear-gradient(90deg, #182452 50%, #131d43 0);
+  }
+  .footer-contact-col {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: rem-calc(16);
+  }
+  .footer-logo {
+    margin-bottom: auto;
+  }
+  .footer-content,
+  .footer-author-copyright {
+    padding-left: rem-calc(10);
+  }
+  .footer-subsection-title {
+    margin-bottom: rem-calc(44);
+  }
 }
 
 @include breakpoint(large) {
   // Home page
+  hr {
+    margin-top: rem-calc(48);
+    margin-bottom: rem-calc(61);
+  }
   .navigation-menu {
     li {
       flex-basis: rem-calc(200);
@@ -234,6 +349,37 @@
       }
     }
   }
+  .prices-item {
+    padding: rem-calc(25 15);
+  }
+  .map {
+    height: rem-calc(674);
+  }
+  .map-info {
+    bottom: rem-calc(176);
+  }
+  .footer {
+    background-image: linear-gradient(90deg, #182452 33.3333%, #131d43 0);
+    background-image: linear-gradient(90deg, #182452 calc(33.3333% + 20px), #131d43 0);
+  }
+  .footer-infoblock {
+    &:not(:last-child) {
+      margin-bottom: rem-calc(54);
+    }
+  }
+  .footer-content {
+    padding-left: rem-calc(30);
+  }
+  .scl-menu {
+    &.simple {
+      li {
+        margin-right: rem-calc(40);
+      }
+    }
+  }
+  .footer-author-copyright {
+    text-align: right;
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -255,6 +401,13 @@
     margin-left: rem-calc(-20);
     padding-right: rem-calc(50);
   }
+  .map-info {
+    left: 50%;
+    margin-left: rem-calc(-600);
+  }
+  .footer-content {
+    padding-left: rem-calc(80);
+  }
 }
 
 @include breakpoint(1280px) {
@@ -267,6 +420,9 @@
 
 @include breakpoint(medium down) {
   // Home page
+  .prices-checked-list {
+    margin-left: rem-calc(18);
+  }
 }
 
 @include breakpoint(small only) {
@@ -325,5 +481,8 @@
         padding-bottom: 0;
       }
     }
+  }
+  .copyright {
+    margin-bottom: rem-calc(10);
   }
 }

@@ -7,6 +7,20 @@
   font-weight: 600;
   white-space: nowrap;
   user-select: none;
+  &.hollow {
+    &.default {
+      padding-top: rem-calc(11);
+      padding-bottom: rem-calc(11);
+      border: 4px solid $medium-gray;
+      color: #1f3d4e;
+      &:hover,
+      &:focus {
+        border-color: $secondary-color;
+        color: $white;
+        background-color: $secondary-color;
+      }
+    }
+  }
   &.secondary {
     color: $white;
     &:hover,
@@ -75,5 +89,27 @@
   }
   .icon {
     margin-right: rem-calc(15);
+  }
+}
+.counter-button {
+  display: block;
+  flex: 1 0 rem-calc(35);
+  margin: 0;
+  padding: rem-calc(0 5);
+  width: rem-calc(35);
+  height: rem-calc(35);
+  max-width: rem-calc(35);
+  border: 1px solid $super-light-gray;
+  font-size: rem-calc(28);
+  line-height: unitless-calc(31, 28);
+  text-align: center;
+  user-select: none;
+  color: #7d8b99;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+    color: $white;
+    background-color: $primary-color;
   }
 }

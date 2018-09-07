@@ -35,6 +35,11 @@ svg {
         transform: translateX(-50%);
       }
     }
+    &.primary {
+      &:after {
+        background-color: #0753a8;
+      }
+    }
     &.secondary {
       &:after {
         background-color: $secondary-color;
@@ -60,6 +65,23 @@ svg {
     }
     &.cell {
       padding-left: rem-calc(32);
+    }
+  }
+}
+.checked-list {
+  li {
+    position: relative;
+    padding: rem-calc(13 0);
+    &:after {
+      content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS41NSAxMy4wNSI+PHRpdGxlPmNoZWNrLW1hcms8L3RpdGxlPjxnIGlkPSIyNDcyMzNlMi0xZjI4LTRkZTctYWRiMi0zMTQwNDFkODdhY2YiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9ImQ4YTE0NzE3LTkzN2ItNGE3MC1iYTk4LTI0YjA0M2MxY2JkMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cG9seWdvbiBwb2ludHM9IjE1LjU1IDIuMTIgMTMuNDMgMCA0Ljc5IDguNjQgMi4xMiA1Ljk3IDAgOC4xIDQuOTUgMTMuMDUgNy4wNyAxMC45MyA2LjkxIDEwLjc2IDE1LjU1IDIuMTIiIHN0eWxlPSJmaWxsOiMwNzUzYTg7ZmlsbC1ydWxlOmV2ZW5vZGQiLz48L2c+PC9nPjwvc3ZnPg==);
+      position: absolute;
+      top: rem-calc(14);
+      left: rem-calc(-18);
+      width: 13px;
+      height: 12px;
+    }
+    & + li {
+      border-top: 1px solid $super-light-gray;
     }
   }
 }

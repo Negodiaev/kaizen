@@ -87,3 +87,27 @@
     }
   }
 }
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: rem-calc(140);
+}
+.counter-input {
+  margin-bottom: 0;
+  border: 0;
+  padding: rem-calc(4 0);
+  height: rem-calc(35);
+  font-size: rem-calc(20);
+  line-height: unitless-calc(27.01, 20);
+  text-align: center;
+  user-select: none;
+  background-color: transparent;
+  &[readonly] {
+    background-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    border: 0;
+    background-color: transparent;
+  }
+}

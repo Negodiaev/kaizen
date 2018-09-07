@@ -143,6 +143,37 @@ document.addEventListener('DOMContentLoaded', function(event) {
     }
   });
 
+  // counter
+  var increments = document.querySelectorAll('.counter-button.plus'),
+    decrements = document.querySelectorAll('.counter-button.minus'),
+    i;
+
+  for (i = 0; i < increments.length; i++) {
+    increments[i].addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var counterInput = this.parentElement.firstElementChild.nextElementSibling;
+
+      console.log(counterInput);
+
+      if (counterInput.classList.contains('counter-input') && counterInput.value < 1001) {
+        counterInput.value++;
+      }
+    });
+  }
+
+  for (i = 0; i < decrements.length; i++) {
+    decrements[i].addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var counterInput = this.parentElement.firstElementChild.nextElementSibling;
+
+      if (counterInput.classList.contains('counter-input') && counterInput.value > 1) {
+        counterInput.value--;
+      }
+    });
+  }
+
   // lightbox
   //Translate - set before any binding
   WAMediaBox.lang = {
